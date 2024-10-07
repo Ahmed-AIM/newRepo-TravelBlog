@@ -1,0 +1,21 @@
+.contact-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .contact-details {
+    background-color: #f5f7fa;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  .contact-details h2 {
+    color: #333;
+  }
+  
+  .contact-details p {
+    color: #555;
+    margin: 10px 0;
+  }

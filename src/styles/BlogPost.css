@@ -1,0 +1,99 @@
+.blog-post {
+    margin-bottom: 40px;
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Reduced padding */
+    margin-bottom: 15px; /* Reduced margin */
+   /* width: 300px; /* Set a fixed width */
+ /* 
+    text-align: left; /* Ensure text is left-aligned */
+    
+  }
+  
+  .post-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .post-meta {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .featured-image {
+    width: 100%;
+    height: auto;
+    /* max-height: 450px; */
+    margin-bottom: 20px;
+  }
+  
+  .post-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .post-images img {
+    width: 100px;
+    height: 100px;
+    object-fit:scale-down;
+  }
+  
+  .post-content {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .social-share {
+    margin-top: 20px;
+  }
+  
+  .social-share .social-share-button {
+    margin: 10px;
+    border-radius: 50%;
+    background-color: #6fb3fc;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  
+  }
+  
+  .social-share .social-share-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .post-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  .social-share {
+    display: flex;
+    gap: 10px;
+  }
+
+  .collapsable-comments {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 10px;
+  }
+  
+  .post-title {
+    font-size: 24px;
+  }
+  
+  .post-images img {
+    width: 80px;
+    height: 80px;
+  }
+}

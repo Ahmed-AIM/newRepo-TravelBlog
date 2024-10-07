@@ -1,0 +1,54 @@
+.sidebar {
+    width: 300px;
+    margin-left: 20px;
+  }
+  
+  .about-author, .recent-posts, .categories, .social-media {
+    margin-bottom: 40px;
+  }
+  
+  .about-author h2, .recent-posts h2, .categories h2, .social-media h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .recent-posts ul, .categories ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recent-posts li, .categories li {
+    margin-bottom: 10px;
+  }
+  
+  .social-media .social-link {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  @media (max-width: 1025px) {
+    .sidebar {
+        width: 100%;
+        margin-left: 0;
+        display: none;
+    }
+
+    .sidebar-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .about-author, .recent-posts, .categories, .social-media {
+        flex-basis: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+  }
+
+  /* @media (max-width: 768px) {
+    .sidebar {
+     
+    }
+  } */

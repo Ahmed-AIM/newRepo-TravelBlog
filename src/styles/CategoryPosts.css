@@ -1,0 +1,37 @@
+.category-posts {
+  padding: 20px;
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.category-posts h2 {
+  font-size: 28px;
+  color: #154360;
+  margin-bottom: 20px;
+}
+
+.category-posts .blog-post {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.category-posts .post-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.category-posts .post-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.category-posts .post-meta span {
+  margin-right: 10px;
+}

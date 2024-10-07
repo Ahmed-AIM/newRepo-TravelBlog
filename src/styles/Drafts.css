@@ -1,0 +1,59 @@
+.drafts-section {
+  margin: 20px 0;
+}
+
+.drafts-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.draft-item {
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.draft-item h3 {
+  margin: 0 0 5px 0;
+}
+
+.edit-draft-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.edit-draft-btn:hover {
+  background-color: #0056b3;
+}
+
+.load-more-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.load-more-btn:hover {
+  background-color: #218838;
+}
+
+.loading-spinner {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  margin: 20px 0;
+}

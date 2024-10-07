@@ -1,0 +1,96 @@
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex; /* Changed from inline to flex */
+  flex-direction: row; /* Ensure items are in a row */
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Hide the toggle button by default */
+.navbar-toggle {
+  display: none;
+}
+
+
+/* Media query for compact view */
+@media (max-width: 768px) {
+  .navbar-nav {
+    display: none; /* Hide the nav items in compact view */
+  }
+
+  .navbar .container {
+    flex-direction: column;
+  }
+
+  .navbar-brand {
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggle {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbar-nav.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.search-form {
+  order: 3;
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .navbar .container {
+    flex-wrap: nowrap;
+  }
+
+  .search-form {
+    order: 2;
+    width: auto;
+    margin-top: 0;
+  }
+
+  .navbar-nav {
+    order: 3;
+  }
+}

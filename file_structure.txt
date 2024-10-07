@@ -1,0 +1,62 @@
+travel-official/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   ├── manifest.json
+│   └── robots.txt
+├── server/
+│   ├── data/
+│   │   ├── data.json
+│   │   └── users.json
+│   ├── package.json
+│   └── server.js
+├── src/
+│   ├── components/
+│   │   ├── About.jsx
+│   │   ├── BlogPost.jsx
+│   │   ├── BlogPostForm.jsx
+│   │   ├── BlogPostPage.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Destinations.jsx
+│   │   ├── EditProfileForm.jsx
+│   │   ├── FilterInput.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── Homepage.jsx
+│   │   ├── Login.jsx
+│   │   ├── NavBar.jsx
+│   │   ├── SearchBar.jsx
+│   │   ├── SearchResults.jsx
+│   │   ├── Sidebar.jsx
+│   │   ├── UserDashboard.jsx
+│   │   └── FavoritePosts.jsx
+│   ├── styles/
+│   │   ├── About.css
+│   │   ├── App.css
+│   │   ├── BlogPost.css
+│   │   ├── BlogPostForm.css
+│   │   ├── BlogPostPage.css
+│   │   ├── Contact.css
+│   │   ├── Destinations.css
+│   │   ├── Footer.css
+│   │   ├── Header.css
+│   │   ├── Homepage.css
+│   │   ├── Login.css
+│   │   ├── NavBar.css
+│   │   ├── SearchBar.css
+│   │   ├── Sidebar.css
+│   │   ├── UserDashboard.css
+│   │   ├── FavoritePosts.css
+│   │   └── Drafts.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── apiConfig.js
+│   ├── fontawesome.js
+│   ├── index.css
+│   ├── index.js
+│   ├── reportWebVitals.js
+│   └── setupTests.js
+├── .gitignore
+├── package.json
+├── README.md
+└── FileStructureTree.txt

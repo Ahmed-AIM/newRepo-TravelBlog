@@ -1,0 +1,87 @@
+.destinations-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .destinations-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .destination-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .destination-image {
+    width: auto;
+    height: auto;
+  }
+  
+  .destination-card h2 {
+    color: #333;
+    padding: 10px;
+  }
+  
+  .destination-card p {
+    color: #555;
+    padding: 0 10px 10px;
+  }
+  
+
+  .destination-posts {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: nowrap; /* Ensure items are in a single row */
+    gap: 20px; /* Add some space between the posts */
+    justify-content: flex-start; /* Align items to the start */
+  }
+
+  .posts-list {
+    margin-top: 20px;
+  }
+  
+  .post-card {
+    background-color: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Reduced padding */
+    margin-bottom: 15px; /* Reduced margin */
+    width: 400px; /* Set a fixed width */
+    text-align: left; /* Ensure text is left-aligned */
+    overflow: hidden; /* Add this to prevent content from spilling out */
+  }
+  
+  .post-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height, adjust as needed */
+    object-fit: cover; /* This will ensure the image covers the area without distortion */
+    object-position: center; /* This centers the image within its container */
+  }
+
+@media (max-width: 768px) {
+  .destination-card {
+    width: 100%;
+  }
+  
+  .destination-posts {
+    flex-direction: column;
+  }
+  
+  .post-card {
+    width: 100%;
+  }
+}
