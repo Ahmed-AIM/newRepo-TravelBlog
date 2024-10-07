@@ -255,7 +255,7 @@ const UserDashboard = ({ userId }) => {
       const postsResponse = await axios.get(POSTS_API);
       const allPosts = postsResponse.data;
       
-      const favoritePosts = allPosts.filter(post => favoritePostIds.includes(post.id));
+      const favoritePosts = allPosts.filter(post => favoritePostIds.some(post.id));
       setFavoritePosts(favoritePosts);
     } catch (error) {
       console.error('Error fetching favorite posts:', error);
