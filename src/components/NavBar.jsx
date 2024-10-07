@@ -1,4 +1,4 @@
-import { faHome } from '@fortawesome/free-solid-svg-icons';
+ameimport { faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -30,7 +30,7 @@ const NavBar = ({ user, onLogout }) => {
               <img className="nav-link" onClick={onLogout} src="./img/logout.png" alt="Logout" description="Logout" style={{ width: '50px', height: '50px',cursor: 'pointer' }}></img>
               <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
               <span style={{margin: '5px',color: 'white',fontSize: '10px'}}>Welcome</span>
-              <h5 style={{margin: '5px',color: 'white'}}>{user.fullname.first}</h5>
+              <h5 style={{margin: '5px',color: 'white'}}>{user.username.first}</h5>
                 </div></div></li>
             </>
           ) : (
