@@ -247,21 +247,21 @@ const UserDashboard = ({ userId }) => {
     }
   };
 
-  const fetchFavoritePosts = async () => {
-    try {
-      const favoritePostIdsResponse = await axios.get(`${USERS_API}/${userId}/favoritePostIds`);
-      const favoritePostIds = favoritePostIdsResponse.data;
+const fetchFavoritePosts = useCallback(async () => {
+  try {
+    const favoritePostIdsResponse = await axios.get(`${USERS_API}/${userId}/favoritePostIds`);
+    const favoritePostIds = Array.isArray(favoritePostIdsResponse.data) ? favoritePostIdsResponse.data : [favoritePostIdsResponse.data];
 
-      const postsResponse = await axios.get(POSTS_API);
-      const allPosts = postsResponse.data;
-      
-      const favoritePosts = allPosts.filter(post => favoritePostIds.some(post.id));
-      setFavoritePosts(favoritePosts);
-    } catch (error) {
-      console.error('Error fetching favorite posts:', error);
-      setError('Failed to load favorite posts. Please try again later.');
-    }
-  };
+    const postsResponse = await axios.get(POSTS_API);
+    const allPosts = postsResponse.data;
+    
+    const favoritePosts = allPosts.filter(post => favoritePostIds.includes(post.id));
+    setFavoritePosts(favoritePosts);
+  } catch (error) {
+    console.error('Error fetching favorite posts:', error);
+    setError('Failed to load favorite posts. Please try again later.');
+  }
+}, [userId]);
   
   const removeFavorite = async (postId) => {
     try {
