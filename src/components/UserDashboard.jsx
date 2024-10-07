@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { POSTS_API, USERS_API } from '../apiConfig';
 import '../styles/UserDashboard.css'; // Update the import path
 // import EditProfileForm from './EditProfileForm';
+import { useCallback } from 'react';
 
 const UserDashboard = ({ userId }) => {
   const navigate = useNavigate();
