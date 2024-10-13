@@ -1,5 +1,5 @@
 // API URLs
-const API_BASE_URL = 'https://nodejs-serverless-function-express-neon-kappa.vercel.app/';
+const API_BASE_URL = 'https://nodejs-serverless-function-express-neon-kappa.vercel.app/api/';
 const POSTS_API = `${API_BASE_URL}/posts`;
 const USERS_API = `${API_BASE_URL}/users`;
 
